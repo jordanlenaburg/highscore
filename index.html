@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alltime Highest Scores!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="displayList()">
+    <h1>Alltime Highest Scores of the MOST popular games</h1>
+
+    <p>Here you can submit your awesome scores and compare them against the high score champion!</p>
+    <br>
+    <div class="animatefast">
+        <form id="score-submit">
+            <table id="form">
+                <br>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Game Name</th>
+                    <th>Date</th>
+                    <th>Score<br><span id="time">Is this a timed game?<input type="checkbox" id="time-select"></span>
+                    </th>
+                    <th>Trash Talk Randomizer</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="player" placeholder="Player name here"></td>
+                    <td><input type="text" id="game" placeholder="Game name here"></td>
+                    <td><input type="date" id="date"></td>
+                    <td id="score-type"><input type="number" id="score" placeholder="Score here"></td>
+                    <td><input type="checkbox" id="trash"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="center">
+            <button id="submit">Submit</button>
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="animateslow">
+        <table>
+            <tr>
+                <th><a id="name-sort">Player Name</a></th>
+                <th><a id="game-sort">Game Name</a></th>
+                <th><a id="date-sort">Date</a></th>
+                <th><a id="score-sort">Score</a></th>
+                <th>Personal Statement</th>
+            </tr>
+            <tr>
+                <td>Jordan</td>
+                <td>Super Mario</td>
+                <td>2015/10/25</td>
+                <td>125468</td>
+                <td>You'll never beat the champion</td>
+            </tr>
+        </table>
+        <table id="score-list">
+        </table>
+    </div>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+This project was to practice styling using only basic HTML/CSS and posting form data to the page then altering the structure of the data. It used jQuery, CSS animations, and all nature of JS functions.

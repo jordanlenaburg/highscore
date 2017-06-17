@@ -1,0 +1,133 @@
+body {
+    max-width: 100%;
+    margin: auto;
+    background-image: url(images/nintendo-video-games-nes-game-console-gameboy-super-nintendo-white-background-wallpaper-444937.jpg);
+    background-size: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+        margin: auto;
+    }
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    text-align: center;
+}
+
+.animatefast {
+    outline: 10px dashed white;
+    box-shadow: 0 0 0 10px black;
+    margin: auto;
+    width: 80%;
+    transition: all 1s;
+}
+
+.animatefast:hover {
+    outline: 4px dashed black;
+    box-shadow: 0 0 0 10px white;
+    margin: auto;
+    width: 80%;
+    transition: all 1s;
+}
+
+.animateslow {
+    outline: 6px dashed black;
+    box-shadow: 0 0 0 6px #ffffff;
+    margin: auto;
+    width: 80%;
+    animation: 1s animateBorder infinite;
+}
+
+@keyframes animateBorder {
+    to {
+        outline-color: #ffffff;
+        box-shadow: 0 0 0 6px black;
+    }
+}
+
+table {
+    margin: auto;
+    width: 95%;
+    padding: 3px;
+    /*    border: dashed 5px;*/
+}
+
+td {
+    text-align: center;
+    border: groove 6px;
+    padding: 3px;
+    width: 20%;
+    background-color: azure;
+    opacity: .8;
+}
+
+th {
+    background-color: darkgray;
+    opacity: .8;
+}
+
+input {
+    width: 95%;
+}
+
+button {
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: cyan;
+}
+
+button:hover {
+    box-shadow: 10px 10px 5px 0 #999;
+    transition-property: box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+input:focus {
+    box-shadow: 10px 10px 5px 0 #999;
+    transition-property: box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.time {
+    width: 25px;
+}
+
+.red {
+    color: darkred;
+}
+
+.center {
+    margin: auto;
+    width: 50px;
+}
+
+#time {
+    font-weight: 100;
+    font-size: 10px;
+}
+
+#date {
+    width: 83px;
+}
+
+#time-select {
+    width: 5%;
+}
+
+a {
+    text-decoration: underline overline;
+}
+
+a:hover {
+    cursor: pointer;
+}
